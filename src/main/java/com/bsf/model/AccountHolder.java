@@ -1,2 +1,4 @@
-package com.bsf.model;public class AccountHolder {
+package com.bsf.model;
+
+public class AccountHolder {
 }

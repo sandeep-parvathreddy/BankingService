@@ -8,7 +8,7 @@ import lombok.Data;
  */
 @Data
 @AllArgsConstructor
-public class Person extends AccountHolder{
+public class Person extends AccountHolder {
     private String firstName;
     private String lastName;
 }

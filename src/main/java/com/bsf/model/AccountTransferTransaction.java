@@ -1,5 +1,6 @@
 package com.bsf.model;
 
+import com.bsf.utils.TransactionType;
 import lombok.Builder;
 import lombok.Data;
 
@@ -15,4 +16,6 @@ public class AccountTransferTransaction extends Transaction{
     private Long toAccountNum;
 
     private double amount;
+
+    private TransactionType type = TransactionType.TRANSFER;
 }
