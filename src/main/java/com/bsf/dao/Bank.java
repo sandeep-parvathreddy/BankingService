@@ -1,5 +1,4 @@
-package com.bsf.model;
-
+package com.bsf.dao;
 import lombok.Data;
 
 import javax.persistence.*;
