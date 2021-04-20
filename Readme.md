@@ -123,10 +123,10 @@ BankingService is a simple microservice, which does banking related operations. 
 ## Future Tasks/Improvements
 
 1. Currently implemented using H2 database an in-memory storage. We can use any RDBMS storage in future and its easy to plug in using Spring JPA
-2. During Account create, Account Id is set as timestamp. This has security issues as account number is easily guessable. To minimise the risk, need to provide an implementation for Account Id generator. May be use timestamp along with a random Id
+2. During Account create, account id is set as current time in milliseconds. This has security issues as account number is easily guessable. To minimise the risk, need to provide an implementation for Account Id generator. May be use timestamp along with a random Id
 3. Account model currently contains only minimal data, this has to be extended based on requirements
 4. Incase model has some user specific data(email/photo/documents), then it can be moved to NoSQL storage. During Account Create/Get data can be processed from both RDBMS and NoSQL
-5.Transaction processing can be extended by providing a factory of implementations like scheduled transfer/recurring transfer/direct transfer.
+5. Transaction processing can be extended by providing a factory of implementations like scheduled transfer/recurring transfer/direct transfer.
 6. Use Docker to package the entire application
 
 
